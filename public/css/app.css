@@ -1,0 +1,189 @@
+/*app.blade.php*/
+
+
+/*header.blade.php*/
+.header {
+  text-align: right;
+}
+
+.header a{
+  margin:5px 5px;
+  padding:5px 10px;
+  background-color: black;
+  color: azure;
+  text-decoration: none;
+}
+
+@media(max-width:380px){
+  .header a{
+    margin:3px 3px;
+    padding:3px 3px;
+  }
+}
+
+@media(max-width:300px){
+  .header a{
+    display:block;
+  }
+}
+
+/*footer.blade.php*/
+.footer a{
+  margin:5px 5px;
+  padding:5px 10px;
+  background-color: black;
+  color: azure;
+  text-decoration: none;
+}
+
+@media(max-width:380px){
+  .footer a{
+    margin:3px 3px;
+    padding:3px 3px;
+  }
+}
+
+@media(max-width:300px){
+  .footer a{
+    display:block;
+  }
+}
+
+/*index.blade.php*/
+body{
+  width:80%;
+  margin:0 auto;
+}
+
+/* header */
+#typingEffect{
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  font-size: 5rem;
+  color:rgb(255, 255, 255);
+  margin:5vh 0;
+}
+
+
+.header_img{
+  width:100%;
+}
+
+/* contents */
+
+.introduction th{
+  width:82px; /* セルの余白 */
+}
+
+.st_br{
+  display:none;
+}
+
+.second_contents span{
+  color:rgb(255, 0, 0);
+  font:bold;
+  text-decoration: underline;
+}
+
+.line span{
+  color:rgb(255, 0, 0);
+  text-decoration: underline;
+}
+
+.documents_contents{
+  text-decoration: none;
+  color:rgb(0, 106, 255);
+}
+
+@media(min-width: 710px){
+  .first_contents {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center; /* 縦方向の中央揃え */
+    justify-content: center; /* 横方向の中央揃え */
+    height: 300px;
+  }
+
+  .first_contents img {
+    margin-left: 10px; /* 画像とテーブルの間の余白 */
+    height: 100%;
+  }
+
+  .introduction {
+    border-collapse: collapse; /* テーブルのセルの境界線を結合 */
+  }
+
+  .introduction th,
+  .introduction td {
+    padding: 5px 10px; /* セルの余白 */
+    border-bottom: 1px dotted rgb(82, 81, 81); /* 下線を dotted で表示 */
+  }
+
+  .second_contents p {
+    margin: 30px auto; /* 段落を中央に配置 */
+    padding:0 10px;
+    max-width: 800px; /* 必要に応じて最大幅を指定 */
+  }
+
+  .line{
+    margin: 30px auto; /* 段落を中央に配置 */
+    padding:0 10px;
+    max-width: 800px; /* 必要に応じて最大幅を指定 */
+  }
+}
+
+@media(max-width: 709px){
+  .first_contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .first_contents img {
+    margin: 0 auto; /* 画像とテーブルの間の余白 */
+    width:70%;
+  }
+
+  .st_br{
+    display:block;
+  }
+
+  .introduction {
+    border-collapse: collapse; /* テーブルのセルの境界線を結合 */
+  }
+
+  .introduction th,
+  .introduction td {
+    padding: 5px 10px; /* セルの余白 */
+    border-bottom: 1px dotted rgb(82, 81, 81); /* 下線を dotted で表示 */
+  }
+
+  .second_contents p {
+    margin: 20px auto; /* 段落を中央に配置 */
+    padding:0 10px;
+  }
+
+  .line{
+    margin: 20px auto; /* 段落を中央に配置 */
+    padding:0 10px;
+  }
+}
+
+@media(max-width: 500px){
+  #typingEffect{
+    height: 18vh;
+    font-size: 3rem;
+    margin: 3vh 0;
+  }
+}
+
+@media(max-width: 300px){
+  #typingEffect{
+    height: 12vh;
+    font-size: 2rem;
+    margin: 1vh 0;
+  }
+}
